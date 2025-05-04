@@ -11,13 +11,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <div class="body-container">
       <header><h1>English Poem Generator</h1></header>
 
       <main>
-        <form>
+        <form id="english-generator">
           <input
             type="text"
             placeholder="Enter the topic of the English poem."
@@ -28,11 +29,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="the-poem">
-          The poem will be here
-          <br />
-          And also here
-        </div>
+        <div class="the-poem" id="poem-content"></div>
       </main>
 
       <footer>
