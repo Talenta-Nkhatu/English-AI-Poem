@@ -19,19 +19,22 @@
       <header><h1>English Poem Generator</h1></header>
 
       <main>
-        <form id="english-generator">
-          <input
-            type="text"
-            placeholder="Enter the topic of the English poem."
-            autofocus
-            required
-            autocomplete="off"
-            class="form-input"
-            id="form-input-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="the-poem" id="poem-content"></div>
+        <div class="form-container">
+          <form id="english-generator">
+            <input
+              type="text"
+              placeholder="Enter the topic of the English poem."
+              autofocus
+              required
+              autocomplete="off"
+              class="form-input"
+              id="form-input-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">e.g water, paris or flower</div>
+        </div>
+        <div class="the-poem hidden blink-animation" id="poem-content"></div>
       </main>
 
       <footer>
