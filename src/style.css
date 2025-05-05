@@ -77,16 +77,11 @@ footer {
   display: none;
 }
 .generating {
-  animation: blink-animation 1s steps(5 start) infinite;
+  animation: blink 1s step-start 0s infinite;
 }
 
-@keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-@-webkit-keyframes blink-animation {
-  to {
-    visibility: hidden;
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }
