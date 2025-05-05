@@ -23,10 +23,6 @@ function generatePoem(event) {
   let poemElement = document.querySelector("#poem-content");
   poemElement.classList.remove("hidden");
   poemElement.innerHTML = ` <div class="generating"> ⏳Generating a poem: ${formInputInstructions.value} </div>`;
-
-  console.log("Generating poem");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
 }
 
 let poemFormElement = document.querySelector("#english-generator");
